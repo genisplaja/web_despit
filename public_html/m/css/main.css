@@ -1,0 +1,190 @@
+body{
+    /*font-family: 'Quicksand', sans-serif;*/
+    font-family: 'Comfortaa', cursive;
+    /*font-family: 'Varela Round', sans-serif;*/
+    background-color: #CD5C5C;
+    -webkit-transition: background-color 250ms linear, color 1s linear;
+    -moz-transition: background-color 250ms linear, color 1s linear;
+    -o-transition: background-color 250ms linear, color 1s linear;
+    -ms-transition: background-color 250ms linear, color 1s linear;
+    transition: background-color 250ms linear, color 1s linear;
+}
+
+img{
+	height: auto;
+}
+
+img[src="img/iep.png"] {
+	max-width: 65%;
+}
+
+img[src="img/image.png"]{
+	max-width: 65%;
+}
+
+img[src="img/niggas.jpg"]{
+	padding-top: 68px;
+	max-width: 80%
+}
+
+img[src="img/RESPOSTES.png"]{
+	max-width: 93%;
+}
+
+img[src="img/x.png"]{
+	max-width: 55%;
+}
+
+#intro-container{
+	max-width: 30%;
+	background: #0FC6C0;
+  	text-align:center;
+}
+
+#inici_header {
+	padding-bottom: 40px;
+  	text-align:center;
+  	-webkit-transition: background-color 250ms linear, color 1s linear;
+    -moz-transition: background-color 250ms linear, color 1s linear;
+    -o-transition: background-color 250ms linear, color 1s linear;
+    -ms-transition: background-color 250ms linear, color 1s linear;
+    transition: background-color 250ms linear, color 1s linear;
+}
+
+#bio_header {
+	background: #ffd9b3;
+	padding-top: 68px;
+	padding-bottom: 150px;
+  	text-align:center;
+}
+
+#gira_header{
+	background: #4da6ff;
+	padding-top: 68px;
+	padding-bottom: 150px;
+	text-align:center;
+}
+
+#musica_header{
+	background: #ffb566;
+	padding-top: 68px;
+	padding-bottom: 150px;
+	text-align:center;
+}
+
+#multimedia_header{
+	background: #00cc99;
+	padding-top: 68px;
+	padding-bottom: 150px;
+	text-align:center;
+}
+
+#contacte_header{
+	background: #ffb3e6;
+	padding-top: 68px;
+	padding-bottom: 150px;
+	text-align:center;
+}
+
+#footer{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.xarxes {
+    float: left;
+}
+
+.idiomes { 
+    float: right;
+}
+
+#despit2{
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+}
+
+.cropimg {
+	padding-right: 150px;
+}
+
+#navbarNav{
+	padding-left: 260px;
+}
+
+.button {
+  display: inline-block;
+  background-color: transparent !important; /* Green */
+  border: 2px solid #ffffff !important; /* Green */
+  color: white !important;
+  padding: 15px 32px !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  font-family: montserrat !important;
+  font-size: 16px !important;
+}
+
+.button {width: 515px; !important}
+
+.button {
+  transition-duration: 0.4s !important;
+}
+
+.button:hover {
+  background-color: #f76262 !important; /* Green */
+  color: white !important;
+}
+
+ /* Style all font awesome icons */
+.fab {
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+/* Twitter */
+.fa-record-vinyl {
+  color: black;
+
+} 
+
+/* Facebook */
+.fa-facebook {
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  color: white;
+} 
+
+/* Twitter */
+.fa-twitter {
+  color: white;
+} 
+
+/* Facebook */
+.fa-tiktok {
+  color: white;
+}
+
+/* Instagram */
+.fa-deezer {
+  color: white;
+} 
+
+/* Twitter */
+.fa-itunes {
+  color: white;
+} 

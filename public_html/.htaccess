@@ -1,0 +1,42 @@
+RewriteEngine On
+#example.com/page will display the contents of example.com/page.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L,QSA]
+
+#Remove index.html from main page
+RewriteRule ^index.html$ / [L,R=301]
+
+#301 from example.com/page.html to example.com/page
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+
+<IfModule mod_rewrite.c>
+    RewriteBase /
+    RewriteEngine On
+
+    # Check if mobile=1 is set and set cookie 'mobile' equal to 1
+    RewriteCond %{QUERY_STRING} (^|&)mobile=1(&|$)
+    RewriteRule ^ - [CO=mobile:1:%{HTTP_HOST}]
+
+    # Check if mobile=0 is set and set cookie 'mobile' equal to 0
+    RewriteCond %{QUERY_STRING} (^|&)mobile=0(&|$)
+    RewriteRule ^ - [CO=mobile:0:%{HTTP_HOST}]
+
+    # cookie can't be set and read in the same request so check
+    RewriteCond %{QUERY_STRING} (^|&)mobile=0(&|$)
+    RewriteRule ^ - [S=1]
+
+    # Check if this looks like a mobile device
+    RewriteCond %{HTTP:x-wap-profile} !^$ [OR]
+    RewriteCond %{HTTP_USER_AGENT} "android|blackberry|ipad|iphone|ipod|iemobile|opera mobile|palmos|webos|googlebot-mobile" [NC,OR]
+    RewriteCond %{HTTP:Profile}       !^$
+
+    # Check if we're not already on the mobile site
+    RewriteCond %{HTTP_HOST}          !^m\.
+    # Check to make sure we haven't set the cookie before
+    RewriteCond %{HTTP:Cookie}        !\mobile=0(;|$)
+    # Now redirect to the mobile site
+    RewriteRule ^ http://despit.cat/m/ [R]
+</IfModule>
