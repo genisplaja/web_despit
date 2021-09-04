@@ -32,22 +32,22 @@ img[src="img/x.png"]{
 }
 
  /* Container holding the image and the text */
-.container_promotors_1 {
+/*.container_promotors_1 {
   position: relative;
   text-align: center;
   color: black;
   font-size: 36px !important;
   /*background: rgba(128, 50, 60, 0.5); /* Green background with 30% opacity */
-  margin-left: 400px;
-  margin-right: 400px;
-}
+  /*margin-left: 400px;
+  /*margin-right: 400px;*/
+/*}
 
-#logo_promotors{
+/*#logo_promotors{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
-}
+}*/
 
 #intro-container{
 	max-width: 30%;
