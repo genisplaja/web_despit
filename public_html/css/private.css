@@ -1,0 +1,128 @@
+body{
+    /*font-family: 'Quicksand', sans-serif;*/
+    font-family: 'Comfortaa', cursive;
+    background-image: url("../img/fondo_1.jpg");
+    /*font-family: 'Varela Round', sans-serif;*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+img[src="img/image.png"] {
+	max-width: 45%;
+}
+
+#intro-container{
+	max-width: 30%;
+	background: #0FC6C0;
+  	text-align:center;
+}
+
+#inici_header {
+	padding-bottom: 40px;
+  	text-align:center;
+}
+
+#footer{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#despit2{
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+}
+
+.cropimg {
+	padding-right: 150px;
+}
+
+#navbarNav{
+	padding-left: 260px;
+}
+
+.button {
+  display: inline-block;
+  background-color: transparent !important; /* Green */
+  border: 2px solid #ffffff !important; /* Green */
+  color: white !important;
+  padding: 15px 32px !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  font-family: montserrat !important;
+  font-size: 16px !important;
+}
+
+.button {width: 515px; !important}
+
+.button {
+  transition-duration: 0.4s !important;
+}
+
+.button:hover {
+  background-color: #f76262 !important; /* Green */
+  color: white !important;
+}
+
+ /* Style all font awesome icons */
+.fab {
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+/* Twitter */
+.fa-record-vinyl {
+  color: white;
+
+} 
+
+/* Facebook */
+.fa-facebook {
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  color: white;
+} 
+
+/* Twitter */
+.fa-twitter {
+  color: white;
+} 
+
+/* Facebook */
+.fa-tiktok {
+  color: white;
+}
+
+/* Instagram */
+.fa-deezer {
+  color: white;
+} 
+
+/* Twitter */
+.fa-itunes {
+  color: white;
+} 
+
+.icons_privat{
+    padding-top: 40px;
+}
+
+.sound_cloud{
+    padding-top: 220px;
+    opacity: 70%;
+}
