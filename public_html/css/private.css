@@ -8,8 +8,13 @@ body{
     background-size: cover;
 }
 
-img[src="img/image.png"] {
+img[src="img/nova_img/logo_despit_blanc.png"] {
 	max-width: 45%;
+}
+
+img[src="img/nova_img/quadrat_20.png"] {
+  padding-top: 130px;
+	max-width: 6%;
 }
 
 #intro-container{
@@ -123,6 +128,6 @@ img[src="img/image.png"] {
 }
 
 .sound_cloud{
-    padding-top: 220px;
+    padding-top: 25px;
     opacity: 70%;
 }
